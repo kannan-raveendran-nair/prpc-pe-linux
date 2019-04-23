@@ -51,6 +51,7 @@ if [[ -f "$1" ]]; then
   #move startup & shutdown scripts for later use
   cp "$PWD"/shutdown_pega.sh /opt/pega/
   cp "$PWD"/start_pega.sh /opt/pega/
+  cp "$PWD"/prpc_pe.sh /opt/pega/
 
   rm -rf "$PEGA_TEMP"   #remove extracted files after use
   echo "Installation complete"
