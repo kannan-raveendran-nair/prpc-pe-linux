@@ -1,0 +1,10 @@
+[Unit]
+Description=Service to start Pega PRPC & Postgresql
+
+[Service]
+Type=forking
+ExecStart=/opt/pega/start_pega.sh
+ExecStop=/opt/pega/shutdown_pega.sh
+
+[Install]
+WantedBy=multi-user.target
